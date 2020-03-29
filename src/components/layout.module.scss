@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.colored-background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 700px;
+  background: linear-gradient(
+    45deg,
+    rgba(222, 145, 29, 1) 0%,
+    rgba(250, 219, 95, 1) 100%
+  );
+}
+
+.content {
+  flex-grow: 1;
+}

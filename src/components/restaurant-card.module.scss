@@ -1,0 +1,32 @@
+.card {
+  margin: 1rem;
+  background-color: #ffffff;
+  width: 200px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin: 0.5rem 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.link {
+  display: inline-block;
+  color: #ffffff;
+  background-color: rgba(222, 145, 29, 1);
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  margin: 0.5rem auto 1em auto;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+}

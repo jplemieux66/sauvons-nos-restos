@@ -1,0 +1,26 @@
+.description {
+  padding: 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 38px;
+    margin: 2rem 0 3rem 0;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fffefa;
+  @media (min-width: 750px) {
+    box-shadow: 0 4px 4px 0 rgba(#3b3b3b, 0.15);
+    border-radius: 0.25rem;
+  }
+}
