@@ -5,26 +5,41 @@ import InfiniteScroll from "react-infinite-scroller"
 import Layout from "../components/layout"
 import RestaurantCard from "../components/restaurant-card"
 import indexStyles from "./index.module.scss"
+import searchIcon from "./search-outline.svg"
 
 class IndexPage extends React.Component {
   constructor() {
     super()
     this.addCards = this.addCards.bind(this)
+    this.onSearchTextChange = this.onSearchTextChange.bind(this)
 
     this.state = {
       cardsToShow: 12,
+      searchText: null,
     }
   }
 
   addCards() {
-    this.setState({ cardsToShow: this.state.cardsToShow + 12 })
+    this.setState({ ...this.state, cardsToShow: this.state.cardsToShow + 12 })
+  }
+
+  onSearchTextChange(event) {
+    this.setState({ ...this.state, searchText: event.target.value })
   }
 
   render() {
     const { data } = this.props
-    const { cardsToShow } = this.state
+    const { cardsToShow, searchText } = this.state
 
-    const nodes = data.allAirtable.nodes.slice(0, cardsToShow)
+    let nodes = data.allAirtable.nodes
+
+    if (searchText !== null && searchText !== undefined) {
+      nodes = nodes.filter(n =>
+        n.data.Name.toLowerCase().includes(searchText.toLowerCase())
+      )
+    }
+
+    nodes = nodes.slice(0, cardsToShow)
 
     return (
       <Layout>
@@ -49,17 +64,27 @@ class IndexPage extends React.Component {
             </div>
           }
         >
-          <div className={indexStyles.restaurantsList}>
-            {nodes.map(node => {
-              return (
-                <RestaurantCard
-                  key={node.data.Name}
-                  name={node.data.Name}
-                  link={node.data.Gift_Card_Link}
-                  image={node.data.Image.localFiles[0].relativePath}
-                ></RestaurantCard>
-              )
-            })}
+          <div className={indexStyles.mainContent}>
+            <div className={indexStyles.searchBar}>
+              <img alt="Search Icon" src={searchIcon}></img>
+              <input
+                type="search"
+                placeholder="Rechercher"
+                onChange={this.onSearchTextChange}
+              ></input>
+            </div>
+            <div className={indexStyles.restaurantsList}>
+              {nodes.map(node => {
+                return (
+                  <RestaurantCard
+                    key={node.data.Name}
+                    name={node.data.Name}
+                    link={node.data.Gift_Card_Link}
+                    image={node.data.Image.localFiles[0].relativePath}
+                  ></RestaurantCard>
+                )
+              })}
+            </div>
           </div>
         </InfiniteScroll>
       </Layout>
