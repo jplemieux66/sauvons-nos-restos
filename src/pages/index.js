@@ -34,9 +34,13 @@ class IndexPage extends React.Component {
     let nodes = data.allAirtable.nodes
 
     if (searchText !== null && searchText !== undefined) {
-      nodes = nodes.filter(n =>
-        n.data.Name.toLowerCase().includes(searchText.toLowerCase())
-      )
+      nodes = nodes.filter(n => {
+        if (!n.data.Name) {
+          return false
+        }
+
+        return n.data.Name.toLowerCase().includes(searchText.toLowerCase())
+      })
     }
 
     nodes = nodes.slice(0, cardsToShow)
