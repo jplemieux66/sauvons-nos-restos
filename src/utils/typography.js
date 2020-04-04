@@ -5,6 +5,12 @@ const typography = new Typography({
   baseLineHeight: 1.45,
   headerFontFamily: ["Roboto", "sans-serif"],
   bodyFontFamily: ["Roboto", "sans-serif"],
+  googleFonts: [
+    {
+      name: "Roboto",
+      styles: ["300", "400", "500", "600", "700"],
+    },
+  ],
 })
 
 typography.injectStyles()

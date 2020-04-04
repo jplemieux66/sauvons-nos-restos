@@ -48,5 +48,6 @@ module.exports = {
         hostname: "www.sauvonsnosrestos.com",
       },
     },
+    "gatsby-plugin-react-helmet",
   ],
 }

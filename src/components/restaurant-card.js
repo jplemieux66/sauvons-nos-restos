@@ -15,7 +15,7 @@ const RestaurantCard = props => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Get Gift Card
+        Carte Cadeau
       </a>
     </div>
   )
