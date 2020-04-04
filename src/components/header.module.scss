@@ -2,6 +2,10 @@
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 750px) {
+    padding: 1rem;
+  }
 }
 
 .header-buttons-container {
@@ -22,10 +26,38 @@
       box-shadow: 0 2px 2px 0 rgba(#3b3b3b, 0.1);
     }
   }
+
+  button {
+    font-weight: 500;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 }
 
 .title {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+
+  h2 {
+    margin: 0;
+  }
+
+  button {
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+  }
 }

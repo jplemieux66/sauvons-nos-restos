@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.3.1",
+    "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sass": "^2.2.1",
@@ -24,6 +25,7 @@
     "gatsby-plugin-typography": "^2.4.1",
     "gatsby-source-airtable": "^2.1.0",
     "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.3",
     "lodash.get": "^4.4.2",
     "node-sass": "^4.13.1",
@@ -31,6 +33,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-infinite-scroller": "^1.2.4",
+    "react-modal": "^3.11.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19"
   },

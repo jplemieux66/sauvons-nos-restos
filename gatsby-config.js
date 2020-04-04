@@ -49,5 +49,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-162831354-1",
+      },
+    },
   ],
 }
