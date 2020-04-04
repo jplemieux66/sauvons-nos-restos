@@ -1,5 +1,27 @@
 .header {
-  padding: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-buttons-container {
+  display: flex;
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+
+    margin-left: 8px;
+    padding: 8px 16px;
+    border-radius: 25px;
+
+    &:last-child {
+      background-color: #ffffff;
+      color: #b44d12;
+      box-shadow: 0 2px 2px 0 rgba(#3b3b3b, 0.1);
+    }
+  }
 }
 
 .title {
