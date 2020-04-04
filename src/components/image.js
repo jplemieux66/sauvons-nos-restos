@@ -29,7 +29,9 @@ const Image = ({ src, ...props }) => {
 
   const fluid = safeGet(match, "childImageSharp.fluid")
 
-  return fluid ? <Img fluid={fluid} Tag="div" {...props} /> : null
+  return fluid ? (
+    <Img fluid={{ ...fluid, aspectRatio: 1.6 }} Tag="div" {...props} />
+  ) : null
 }
 
 export default Image

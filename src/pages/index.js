@@ -78,27 +78,26 @@ class IndexPage extends React.Component {
               ></input>
             </div>
             <div className={indexStyles.restaurantsList}>
-              {nodes.map(node => {
-                if (
-                  !node ||
-                  !node.data ||
-                  !node.data.Name ||
-                  !node.data.Gift_Card_Link ||
-                  !node.data.Image ||
-                  !node.data.Image.localFiles
-                ) {
-                  return
-                }
-
-                return (
-                  <RestaurantCard
-                    key={node.data.Name}
-                    name={node.data.Name}
-                    link={node.data.Gift_Card_Link}
-                    image={node.data.Image.localFiles[0].relativePath}
-                  ></RestaurantCard>
+              {nodes
+                .filter(
+                  node =>
+                    node &&
+                    node.data &&
+                    node.data.Name &&
+                    node.data.Gift_Card_Link &&
+                    node.data.Image &&
+                    node.data.Image.localFiles
                 )
-              })}
+                .map(node => {
+                  return (
+                    <RestaurantCard
+                      key={node.data.Name}
+                      name={node.data.Name}
+                      link={node.data.Gift_Card_Link}
+                      image={node.data.Image.localFiles[0].relativePath}
+                    ></RestaurantCard>
+                  )
+                })}
             </div>
           </div>
         </InfiniteScroll>
