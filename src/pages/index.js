@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
           </h1>
           <p>
             Les cartes cadeaux permettent "d'applatir la courbe" des revenus
-            perdus du COVID-19.
+            perdus de la COVID-19.
           </p>
         </div>
 
