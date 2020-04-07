@@ -53,12 +53,11 @@ class IndexPage extends React.Component {
       <Layout>
         <div className={indexStyles.description}>
           <h1>
-            Tes restaurants préférés à Montréal risquent de fermer. Contribue à
-            les sauver.
+            Vos restaurants préférés à Montréal risquent de fermer.
+            Sauvez-les!
           </h1>
           <p>
-            Les cartes cadeaux permettent "d'applatir la courbe" des revenus
-            perdus de la COVID-19.
+            Achetez une carte cadeau pour aider un resto à faire face à la crise du COVID-19.
           </p>
         </div>
 
