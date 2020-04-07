@@ -6,10 +6,14 @@ import Layout from "../components/layout"
 import RestaurantCard from "../components/restaurant-card"
 import indexStyles from "./index.module.scss"
 import searchIcon from "./search-outline.svg"
+import ReactGA from "react-ga"
 
 class IndexPage extends React.Component {
   constructor() {
     super()
+
+    ReactGA.initialize("UA-162831354-1")
+
     this.addCards = this.addCards.bind(this)
     this.onSearchTextChange = this.onSearchTextChange.bind(this)
 

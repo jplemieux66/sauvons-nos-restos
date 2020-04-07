@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import ReactGA from "react-ga"
 
 import restaurantCardStyles from "./restaurant-card.module.scss"
 import Image from "./image"
@@ -14,6 +15,12 @@ const RestaurantCard = props => {
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() =>
+          ReactGA.event({
+            category: "Links",
+            action: "Click on gift card link",
+          })
+        }
       >
         Carte Cadeau
       </a>

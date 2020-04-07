@@ -1,5 +1,6 @@
 import React from "react"
 import Modal from "react-modal"
+import ReactGA from "react-ga"
 
 import headerStyles from "./header.module.scss"
 import { useStaticQuery, graphql } from "gatsby"
@@ -49,6 +50,10 @@ const Header = () => {
             href="https://airtable.com/shrDHAlRbrk4lpgZn"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={ReactGA.event({
+              category: "Links",
+              action: "Add Restaurant",
+            })}
           >
             Ajouter un restaurant
           </a>
