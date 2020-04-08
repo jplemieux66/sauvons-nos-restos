@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
             Sauvez-les!
           </h1>
           <p>
-            Achetez une carte cadeau pour aider un resto à faire face à la crise du COVID-19.
+            Aidez vos restos préférés à faire face au COVID-19 en achetant des cartes-cadeaux.
           </p>
         </div>
 
