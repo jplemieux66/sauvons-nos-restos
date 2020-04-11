@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "Sauvons nos restos",
     description:
-      "Tes restaurants préférés à Montréal risquent de fermer. Contribue à les sauver.",
+      "Vos restaurants préférés à Montréal risquent de fermer. Sauvez-les!",
     url: "https://www.sauvonsnosrestos.com",
     image: "/images/resto.jpg",
   },
