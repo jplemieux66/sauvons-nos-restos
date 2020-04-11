@@ -24,6 +24,22 @@ const RestaurantCard = props => {
       >
         Carte Cadeau
       </a>
+      {props.orderLink !== null && (
+        <a
+          className={restaurantCardStyles.link}
+          href={props.orderLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() =>
+            ReactGA.event({
+              category: "Links",
+              action: "Click on order link",
+            })
+          }
+        >
+          Commande
+        </a>
+      )}
     </div>
   )
 }

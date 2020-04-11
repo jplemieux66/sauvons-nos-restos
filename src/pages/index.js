@@ -53,11 +53,12 @@ class IndexPage extends React.Component {
       <Layout>
         <div className={indexStyles.description}>
           <h1>
-            Vos restaurants préférés à Montréal risquent de fermer.
+            Vos restaurants préférés à Montréal risquent de fermer. <br />
             Sauvez-les!
           </h1>
           <p>
-            Aidez vos restos préférés à faire face au COVID-19 en achetant des cartes-cadeaux.
+            Aidez vos restos préférés à faire face au COVID-19 en achetant des
+            cartes-cadeaux.
           </p>
         </div>
 
@@ -97,6 +98,7 @@ class IndexPage extends React.Component {
                       key={node.data.Name}
                       name={node.data.Name}
                       link={node.data.Gift_Card_Link}
+                      orderLink={node.data.Order_Link}
                       image={node.data.Image.localFiles[0].relativePath}
                     ></RestaurantCard>
                   )
@@ -117,6 +119,7 @@ export const pageQuery = graphql`
           Address
           Name
           Gift_Card_Link
+          Order_Link
           Image {
             localFiles {
               relativePath
