@@ -68,6 +68,7 @@ class IndexPage extends React.Component {
       const myLong = coords.longitude
 
       nodes = nodes
+        .filter(n => n.data.LatLong)
         .map(n => {
           const nLat = parseFloat(n.data.LatLong.split(",")[0])
           const nLong = parseFloat(n.data.LatLong.split(",")[1])
