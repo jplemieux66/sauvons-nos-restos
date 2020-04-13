@@ -1,6 +1,8 @@
 import { graphql } from "gatsby"
 import React from "react"
 import InfiniteScroll from "react-infinite-scroller"
+import Helmet from "react-helmet"
+import { withPrefix, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import RestaurantCard from "../components/restaurant-card"
@@ -96,6 +98,9 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <Helmet>
+        <script src={withPrefix('script.js')} type="text/javascript" />
+        </Helmet>
         <div className={indexStyles.description}>
           <h1>
             Vos restaurants préférés à Montréal risquent de fermer. <br />
