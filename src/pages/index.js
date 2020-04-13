@@ -59,8 +59,6 @@ class IndexPage extends React.Component {
 
     let nodes = data.allAirtable.nodes
 
-    console.log(nodes)
-
     if (isGeolocationAvailable && coords) {
       ReactGA.event({
         category: "Geolocation",
@@ -99,7 +97,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <Helmet>
-        <script src={withPrefix('script.js')} type="text/javascript" />
+          <script src={withPrefix("script.js")} type="text/javascript" />
         </Helmet>
         <div className={indexStyles.description}>
           <h1>
