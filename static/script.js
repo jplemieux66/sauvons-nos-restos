@@ -2,6 +2,9 @@
 // Solution taken from from https://stackoverflow.com/questions/54834930/how-to-include-local-javascript-on-a-gatsby-page/54835129#54835129
 
 <script>
+    dangerouslySetInnerHTML={{
+                      __html: `
+
 "use strict";
 
 !function() {
@@ -26,4 +29,5 @@
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('ipz8ezu2u6ye');
+`,}}/>
 </script>
