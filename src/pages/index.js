@@ -101,11 +101,11 @@ class IndexPage extends React.Component {
         </Helmet>
         <div className={indexStyles.description}>
           <h1>
-            Vos restaurants préférés à Montréal risquent de fermer. <br />
+            Vos restaurants préférés à Montréal risquent de fermer.
             Sauvez-les!
           </h1>
           <p>
-            Aidez vos restos préférés à faire face au COVID-19 en achetant des
+            Aidez nos restos à faire face au COVID-19 en achetant des
             cartes-cadeaux.
           </p>
         </div>
