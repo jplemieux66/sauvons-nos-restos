@@ -1,5 +1,3 @@
-### Foire aux questions
-
 # Pour les fans de restaurants
 ## C'est quoi, Sauvons nos restos?
 
@@ -25,9 +23,9 @@ Une autre belle initiative: le fonde d'aide MTL Resto Relief Fund [MTL Resto Rel
 Dans plusieurs cas, il est difficile de récupérer la valeur de sa carte si un commerce fait ferme. On vous invite à considérer l'achat d'une carte-cadeau comme un don pour votre restaurant préféré!
 
 ## Qui est derrière cette initiative? Et pourquoi?
-Nous sommes deux amis de Montréal, fans de bonne bouffe! Nous ne sortons plus à cause de COVID-19 et nous cherchions un moyen de supporter nos restaurant préférés. 
+Nous sommes deux amis de Montréal, fans de bonne bouffe! Nous ne sortons plus à cause du COVID-19 et nous cherchions un moyen de supporter nos restaurants préférés. 
 
-L'achat de carte-cadeaux est l'une de ces façons. Il est toutefois difficile d'identifier qui offre de telles cartes, et comment les acheter. Sauvons nos restos est un moyen simple de permettre à tout le monde de supporter son restaurant préféré à traverser cette période difficile. 
+L'achat de carte-cadeaux est l'un de ces moyens. Il est toutefois difficile d'identifier qui offre de telles cartes, et comment les acheter. Sauvons nos restos est un moyen simple de permettre à tout le monde de supporter son restaurant préféré à traverser cette période difficile. 
 
 # Pour les restaurants
 ## Pourquoi mon entreprise n'apparaît-elle pas dans vos résultats de recherche?
