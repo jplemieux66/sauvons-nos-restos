@@ -36,7 +36,7 @@ Si cette initiative connaît un succès, nous ajouterons d'autres petits commerc
 ## Mon entreprise propose des chèques-cadeaux, mais votre site indique que nous ne le faisons pas
 Veuillez nous en faire part [ici](https://airtable.com/shrDHAlRbrk4lpgZn).
 
-## Je fais une compagne de levée de fonds et j'aimerais qu'elle apparaisse sur votre site  
+## Je fais une campagne de levée de fonds et j'aimerais qu'elle apparaisse sur votre site  
 Veuillez nous envoyer un email à sauvonsnosrestos@gmail.com
 
 ## Comment puis-je commencer à offrir des cartes-cadeaux en ligne?
