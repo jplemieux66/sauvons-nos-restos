@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import InfiniteScroll from "react-infinite-scroller"
 import Helmet from "react-helmet"
-import { withPrefix, Link } from "gatsby"
+import { withPrefix } from "gatsby"
 
 import Layout from "../components/layout"
 import RestaurantCard from "../components/restaurant-card"

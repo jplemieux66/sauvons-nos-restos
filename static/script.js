@@ -1,6 +1,8 @@
 // Drift Gatsby plugin
 // Solution taken from from https://stackoverflow.com/questions/54834930/how-to-include-local-javascript-on-a-gatsby-page/54835129#54835129
 
+import React from "react"
+
 <script
 dangerouslySetInnerHTML={{
     __html: `
