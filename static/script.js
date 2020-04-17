@@ -1,11 +1,7 @@
 // Drift Gatsby plugin
 // Solution taken from from https://stackoverflow.com/questions/54834930/how-to-include-local-javascript-on-a-gatsby-page/54835129#54835129
 
-import React from "react"
 
-<script
-dangerouslySetInnerHTML={{
-    __html: `
 "use strict";
 
 !function() {
@@ -30,4 +26,3 @@ var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("scri
       }();
       drift.SNIPPET_VERSION = '0.3.1';
       drift.load('ipz8ezu2u6ye');
-`,}}/>
